@@ -3,61 +3,75 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Aliireeza T.</title>
-
-		<meta name="title" content="Aliireeza Teymoorian">
-		<meta name="author" content="Alireza Teymoorian, Aliireeza, علیرضا تیموریان">
-		<meta name="publisher" content="Pulsar Star">
-        	<meta name="designer" content="Aliireeza T.">
-		<meta name="description" content="Aliireeza Teymoorian's Personal Website">
-		<meta name="keywords" content="Aliireeza, Teymoorian, Pulsar Star, GNU/Linux Programming, Mobile Application Development, UI/UX Design">
-		<meta name="robots" content="index, follow">
-		<meta name="generator" content="Pulsar Star">
-
-		<link rel="shortcut icon" href="images/icons/logo.png">
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-
-		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+        
+        <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-
-		
-		<!--		
-			Template Name: Simple Gray Triceratops Theme, 
-			Version: 2.1.1
-			Designed By: Aliireeza Teymoorian
-			Last Modified: Summer 2014
-			License: GNU/GPL
-		-->
+        
+		<style>
+			*{padding:0;margin:0;}
+			@-webkit-keyframes word{0%{color:#dddddd;} 40%{color:#aaaaaa;} 60%{color:#aaaaaa;} 100%{color:#dddddd;}}
+			@-webkit-keyframes coment{0%{color:#eeeeee;} 40%{color:#bbbbbb;} 60%{color:#bbbbbb;} 100%{color:#eeeeee;}}
+			::selection{background:#444444;color:#fafafa;}
+			::-o-selection{background:#444444;color:#fafafa;}
+			::-moz-selection{background:#444444;color:#fafafa;}
+			::-ms-selection{background:#444444;color:#fafafa;}
+			::-webkit-selection{background:#444444;color:#fafafa;}
+			body{font-family:Courier New;font-size:0.9em;width:90%;height:100%;background:#fefefe;padding:100px 5% 50px 5%;}
+			a, a:visited{color:#444444;text-decoration:none;transition: color 0.3s ease-in-out;-moz-transition: color 0.3s ease-in-out;
+				-o-transition: color 0.3s ease-in-out;-webkit-transition: color 0.3s ease-in-out;-ms-transition: color 0.3s ease-in-out;}
+			a:hover{color:#52a8e9;}
+			.codes{color:#dddddd;font-family:Dosis;font-weight:normal;line-height:120%;letter-spacing:1px;}
+			.codes b{color:#444444;font-weight:normal;font-size:1.5em;}
+			.comment{color:#eeeeee;}
+			.animate1{-webkit-animation:word 7s 1s infinite;animation:word 5s 1s infinite;}
+			.animate2{-webkit-animation:word 8s 5s infinite;animation:word 6s 1s infinite;}
+			.animate3{-webkit-animation:word 9s 9s infinite;animation:word 7s 1s infinite;}
+			.animate4{-webkit-animation:word 10s 10s infinite;animation:word 6s 10s infinite;}
+			.animate5{-webkit-animation:word 10s 14s infinite;animation:word 6s 14s infinite;}
+			.animate6{-webkit-animation:word 10s 18s infinite;animation:word 6s 18s infinite;}
+			.animate7{-webkit-animation:coment 12s 1s infinite;animation:word 8s 1s infinite;}
+			.animate8{-webkit-animation:coment 9s 4s infinite;animation:word 5s 4s infinite;}
+			.animate9{-webkit-animation:word 12s 9s infinite;animation:word 8s 9s infinite;}
+			.animate10{-webkit-animation:coment 9s 13s infinite;animation:word 5s 13s infinite;}
+			@media only screen and (-webkit-min-device-pixel-ratio: 2),
+				only screen and ( min--moz-device-pixel-ratio: 2),
+				only screen and ( -o-min-device-pixel-ratio: 2/1),
+				only screen and ( min-device-pixel-ratio: 2),
+				only screen and (min-resolution: 192dpi) { 
+					body{font-size:1.2em;}
+				}
+		</style>
 	</head>
-
+    
 	<body>
-		<section class="pageContent">
-			<header class="pageHeader">
-				<hgroup>
-					<h1>aliireeza::teymoorian</h1>
-					<h2>I'm creating webs, apps and stuff, since 1872 ;)</h2>
-				</hgroup>
-			</header>
-			<section class="pageBody">
-				<article class="pageBodyContent">
-					<p>I'm Founter & CEO of Pulsar Star (a software developing start up) 
-					and beside that, I cosider myself as a 
-					gnu/linux programmer (with C, GO, Bash, Ruby); 
-					mobile (iOS) application developer (using Objective-C & Swift); 
-					& semi web ui/ux designer (using PHP, MySQL, HTML5, CSS3, JQuery);</p>
-				</article>
-			</section>
-			<footer class="pageFooter">
-				<nav class="pageNavigation">
-					<a href="index.html">( home )</a>
-					<a href="/blog"><span>( </span>weblog<span> )</span></a>
-					<a href="biography.html"><span>( </span>biography<span> )</span></a>
-					<a href="projects.html"><span>( </span>projects<span> )</span></a>
-					<a href="portfolio.html"><span>( </span>portfolio<span> )</span></a>
-					<a href="contact.html"><span>( </span>contact<span> )</span></a>
-				</nav>
-					<br><a href="copy.html" class="pageCoyright">&copy; 2014</a>
-			</footer>
-		</section>
+	<pre class="codes">
+	<span class="comment">#include &lt;stdio.h&gt;
+	#include &lt;time.h&gt;
+	#include &lt;string.h&gt;</span>
+	int <span class="animate9">main(int argc</span>, char *argv[]){
+
+		<span class="comment animate7">//who am i?</span>
+		printf ( "<b>aliireeza teymoorian</b> \n" );
+		printf ( "<span class="animate3">gnu/linux</span> programmer, mobile app <span class="animate1">developer</span>, web <span class="animate2">front-end designer</span>" );
+
+		<span class="comment animate8">//visit somewhere else</span>
+		if ( argc >= 2 ) {
+			if ( strcmp ( argv[1], "<span class="animate4">you_want_to_read_something_cool</span>" ) )
+				<a href="http://aliireeza.tumblr.com">blog ( "persian" )</a>;
+			elseif ( strcmp ( argv[1], "<span class="animate5">you_want_to_see_my_works</span>" ) )
+				<a href="http://aliireeza.github.io">portfolio ( time ( 0 ) )</a>;
+			elseif ( strcmp ( argv[1], "<span class="animate3">these_are_images_from_around</span>" ) )
+				<a href="instagram.com/aliireeza_t">projects ( "instagram" )</a>;
+			elseif ( strcmp ( argv[1], "<span class="animate6">you_want_to_know_more_about_me</span>" ) )
+				<a href="https://twitter.com">biography ( "@aliireeza" )</a>;
+			else
+				<a href="mailto:teymoorian@gmail.com">contact_me ( )</a>;
+		}
+
+		// made in iran, tehran. <span class="animate10">&copy; 2014</span>
+		// this page <span class="animate9">will change</span> to a really cool website at <span class="animate9">next year</span> january 1st :)
+		<span class="comment animate10">return 0;</span>
+	}
+	</pre>
 	</body>
 </html>
