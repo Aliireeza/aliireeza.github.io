@@ -38,17 +38,9 @@ a:hover{color:#333333;}
 .page-header h1{font-family:Oswald;font-size:4em;font-weight:normal;padding:3em 20px 30px 20px;text-align:center;}
 .page-header h2{font-family:Open Sans;font-size:1.6em;font-weight:normal;padding:10px 20px;text-align:center;}
 span.page-header-biography{font-size:1em;font-weight:normal;padding:60px 120px 40px 120px;text-align:justify;display:block;clear:both;}
-span.page-header-simple-menu{font-size:1em;font-weight:normal;padding:40px 150px;text-align:center;display:block;clear:both;}
+span.page-header-simple-menu{font-size:1em;font-weight:normal;padding:40px 300px;text-align:center;display:block;clear:both;}
 span.page-header-simple-menu a{cursor:pointer;display:block;text-align:center;width:100px;float:left;padding:10px 20px;margin:5px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;}
 span.page-header-simple-menu a:hover{background:#333333;color:#fafafa;}
-
-.page-projects{display:block;width:100%;height:auto;padding:140px 0px 100px 0px;}
-.page-projects-header{display:block;width:100%;clear:both;margin:30px 0px;}
-.page-projects h1{font-size:1.6em;font-weight:normal;padding:20px;}
-.page-projects-content{display:block;width:100%;clear:both;}
-.page-projects-content-column{width:300px;margin:0;padding:0;float:left;}
-.page-projects-footer{display:block;width:100%;clear:both;margin:30px 0px;}
-.page-projects-footer p{display:block;padding:20px;clear:both;text-align:center;}
 
 .page-portfolio{display:block;width:100%;height:auto;padding:140px 0px 100px 0px;}
 .page-portfolio-header{display:block;width:100%;clear:both;margin:30px 0px;}
@@ -57,14 +49,6 @@ span.page-header-simple-menu a:hover{background:#333333;color:#fafafa;}
 .page-portfolio-content-column{width:300px;margin:0;padding:0;float:left;}
 .page-portfolio-footer{display:block;width:100%;clear:both;margin:30px 0px;}
 .page-portfolio-footer p{display:block;padding:20px;clear:both;text-align:center;}
-
-.page-works{display:block;width:100%;height:auto;padding:140px 0px 100px 0px;}
-.page-works-header{display:block;width:100%;clear:both;margin:30px 0px;}
-.page-works h1{font-size:1.6em;font-weight:normal;padding:20px;}
-.page-works-content{display:block;width:100%;clear:both;}
-.page-works-content-column{width:300px;margin:0;padding:0;float:left;}
-.page-works-footer{display:block;width:100%;clear:both;margin:30px 0px;}
-.page-works-footer p{display:block;padding:20px;clear:both;text-align:center;}
 
 .page-footer{display:block;padding:140px 0px 30 0px;}
 .page-footer h1{font-size:1.6em;font-weight:normal;padding:20px;}
@@ -77,10 +61,10 @@ span.page-header-simple-menu a:hover{background:#333333;color:#fafafa;}
 
 .page-content-gap1{height:50px;display:block;width:100%;clear:both;}
 .page-content-gap2{height:100px;display:block;width:100%;clear:both;}
-.page-content-block{height:260px;width:260px;margin:20px;background:#fcfcfc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;display:block;}
-.page-content-block span{width:258px;height:258px;padding:0px;margin:0;display:inline-block;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out;-moz-transition:background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;text-align:center;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border:1px solid #dddddd;}
+.page-content-block{height:260px;width:260px;margin:20px;background:#fefefe;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;display:block;}
+.page-content-block span{width:258px;height:258px;padding:0px;margin:0;display:inline-block;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out;-moz-transition:background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;text-align:center;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border:1px solid #eeeeee;}
 .page-content-block span p{padding:20px;}
-.page-content-block:hover span{background:#333333;color:#fafafa;border:1px solid #cccccc;}
+.page-content-block:hover span{background:#333333;color:#fafafa;border:1px solid #dddddd;}
 
 
 
