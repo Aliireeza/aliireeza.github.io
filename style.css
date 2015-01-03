@@ -25,11 +25,11 @@ a:hover{color:#333333;}
 .page-grid-sixteen-sixteen{width:100%;display:block;float:left;}
 
 
-.page-navigation{height:80px;background:#1abc9c;color:#fafafa;border-bottom:2px solid #16a085;position:fixed;opacity:0;z-index:100001;top:0;display:block;transition: opacity 0.5s ease-in-out;-webkit-transition: opacity 0.5s ease-in-out;-moz-transition: opacity 0.5s ease-in-out;-ms-transition: opacity 0.5s ease-in-out;-o-transition: opacity 0.5s ease-in-out;}
-.page-navigation h1 a{cursor:pointer;font-family:Oswald;font-size:26pt;font-weight:normal;padding:25px 30px;color:#fafafa;background:#1abc9c;opacity:0;transition: opacity 0.9s ease-in-out;-webkit-transition: opacity 0.9s ease-in-out;-moz-transition: opacity 0.9s ease-in-out;-ms-transition: opacity 0.9s ease-in-out;-o-transition: opacity 0.9s ease-in-out;}
-.page-navigation h1 a:hover{background:#1abc9c;}
-.page-navigation a{cursor:pointer;padding:26px 20px;display:inline-block;font-family:Open Sans, Courier New;font-size:12pt;font-weight:normal;color:#fafafa;background:#1abc9c;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out-moz-transition: background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;}	
-.page-navigation a:hover{background:#16a085;color:#fafafa;}
+.page-navigation{height:80px;background:#333333;color:#fafafa;border-bottom:2px solid #222222;position:fixed;opacity:0;z-index:100001;top:0;display:block;transition: opacity 0.5s ease-in-out;-webkit-transition: opacity 0.5s ease-in-out;-moz-transition: opacity 0.5s ease-in-out;-ms-transition: opacity 0.5s ease-in-out;-o-transition: opacity 0.5s ease-in-out;}
+.page-navigation h1 a{cursor:pointer;font-family:Oswald;font-size:26pt;font-weight:normal;padding:25px 30px;color:#fafafa;background:#333333;opacity:0;transition: opacity 0.9s ease-in-out;-webkit-transition: opacity 0.9s ease-in-out;-moz-transition: opacity 0.9s ease-in-out;-ms-transition: opacity 0.9s ease-in-out;-o-transition: opacity 0.9s ease-in-out;}
+.page-navigation h1 a:hover{background:#333333;}
+.page-navigation a{cursor:pointer;padding:26px 20px;display:inline-block;font-family:Open Sans, Courier New;font-size:12pt;font-weight:normal;color:#fafafa;background:#333333;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out-moz-transition: background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;}	
+.page-navigation a:hover{background:#222222;color:#fafafa;}
 .page-navigation a.blog{padding:23px 30px;cursor: hand;}
 
 .page-content{display:block;width:900px;background:#fafafa;;margin:0 auto;}
@@ -40,7 +40,7 @@ a:hover{color:#333333;}
 span.page-header-biography{font-size:1em;font-weight:normal;padding:60px 120px 40px 120px;text-align:justify;display:block;clear:both;}
 span.page-header-simple-menu{font-size:1em;font-weight:normal;padding:40px 150px;text-align:center;display:block;clear:both;}
 span.page-header-simple-menu a{cursor:pointer;display:block;text-align:center;width:100px;float:left;padding:10px 20px;margin:5px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;}
-span.page-header-simple-menu a:hover{background:#fde353;}
+span.page-header-simple-menu a:hover{background:#333333;color:#fafafa;}
 
 .page-projects{display:block;width:100%;height:auto;padding:140px 0px 100px 0px;}
 .page-projects-header{display:block;width:100%;clear:both;margin:30px 0px;}
@@ -71,7 +71,7 @@ span.page-header-simple-menu a:hover{background:#fde353;}
 .page-footer span.contact{display:block;padding:20px;clear:both;}
 .page-footer span.contact p{display:block;width:100%;clear:both;margin:10px 0px;}
 .page-footer span.contact p a{display:block;text-align:center;width:85px;float:left;padding:10px 20px;margin:5px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;}
-.page-footer span.contact p a:hover{background:#fde353;}
+.page-footer span.contact p a:hover{background:#333333;color:#fafafa;}
 .page-footer span.copy{display:block;padding:20px;color:#cccccc;text-align:right;clear:both;}
 
 
@@ -80,7 +80,7 @@ span.page-header-simple-menu a:hover{background:#fde353;}
 .page-content-block{height:260px;width:260px;margin:20px;background:#fcfcfc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;display:block;}
 .page-content-block span{width:258px;height:258px;padding:0px;margin:0;display:inline-block;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out;-moz-transition:background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;text-align:center;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border:1px solid #dddddd;}
 .page-content-block span p{padding:20px;}
-.page-content-block:hover span{background:#fde353;}
+.page-content-block:hover span{background:#333333;color:#fafafa;border:1px solid #222222;}
 
 
 
