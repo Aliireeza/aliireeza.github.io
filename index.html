@@ -3,75 +3,569 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Aliireeza T.</title>
+
+		<!-- Meta Tags -->
+		<meta name="title" content="Aliireeza T.">
+		<meta name="author" content="Alireza Teymoorian, Aliireeza">
+		<meta name="publisher" content="Pulsar Star">
+		<meta name="designer" content="Aliireeza T.">
+		<meta name="description" content="Aliireeza T. Personal Github Page">
+		<meta name="keywords" content="Web Designing, iOS Application, Linux Administration, Aliireeza, Alireza Teymoorian, Surprise">
+		<meta name="robots" content="index, follow">
+		<meta name="generator" content="Aliireeza T.">
+
+		<!-- StyleSheets and Scripts -->
+		<link rel="shortcut icon" href="">
+		<link rel="stylesheet" href="./style.css" type="text/css">
+		<link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		
+
         
-        <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-        
-		<style>
-			*{padding:0;margin:0;}
-			@-webkit-keyframes word{0%{color:#dddddd;} 40%{color:#aaaaaa;} 60%{color:#aaaaaa;} 100%{color:#dddddd;}}
-			@-webkit-keyframes coment{0%{color:#eeeeee;} 40%{color:#bbbbbb;} 60%{color:#bbbbbb;} 100%{color:#eeeeee;}}
-			::selection{background:#444444;color:#fafafa;}
-			::-o-selection{background:#444444;color:#fafafa;}
-			::-moz-selection{background:#444444;color:#fafafa;}
-			::-ms-selection{background:#444444;color:#fafafa;}
-			::-webkit-selection{background:#444444;color:#fafafa;}
-			body{font-family:Courier New;font-size:0.9em;width:90%;height:100%;background:#fefefe;padding:100px 5% 50px 5%;}
-			a, a:visited{color:#444444;text-decoration:none;transition: color 0.3s ease-in-out;-moz-transition: color 0.3s ease-in-out;
-				-o-transition: color 0.3s ease-in-out;-webkit-transition: color 0.3s ease-in-out;-ms-transition: color 0.3s ease-in-out;}
-			a:hover{color:#52a8e9;}
-			.codes{color:#dddddd;font-family:Dosis;font-weight:normal;line-height:120%;letter-spacing:1px;}
-			.codes b{color:#444444;font-weight:normal;font-size:1.5em;}
-			.comment{color:#eeeeee;}
-			.animate1{-webkit-animation:word 7s 1s infinite;animation:word 5s 1s infinite;}
-			.animate2{-webkit-animation:word 8s 5s infinite;animation:word 6s 1s infinite;}
-			.animate3{-webkit-animation:word 9s 9s infinite;animation:word 7s 1s infinite;}
-			.animate4{-webkit-animation:word 10s 10s infinite;animation:word 6s 10s infinite;}
-			.animate5{-webkit-animation:word 10s 14s infinite;animation:word 6s 14s infinite;}
-			.animate6{-webkit-animation:word 10s 18s infinite;animation:word 6s 18s infinite;}
-			.animate7{-webkit-animation:coment 12s 1s infinite;animation:word 8s 1s infinite;}
-			.animate8{-webkit-animation:coment 9s 4s infinite;animation:word 5s 4s infinite;}
-			.animate9{-webkit-animation:word 12s 9s infinite;animation:word 8s 9s infinite;}
-			.animate10{-webkit-animation:coment 9s 13s infinite;animation:word 5s 13s infinite;}
-			@media only screen and (-webkit-min-device-pixel-ratio: 2),
-				only screen and ( min--moz-device-pixel-ratio: 2),
-				only screen and ( -o-min-device-pixel-ratio: 2/1),
-				only screen and ( min-device-pixel-ratio: 2),
-				only screen and (min-resolution: 192dpi) { 
-					body{font-size:1.2em;}
+        <!--
+        Project Name: Aliireeza T. Prsonal Web Site of Github (aliireeza.github.io)
+        Designed By Aliireeza Teymoorian, January 2015
+        License: GNU/GPL v3
+        Powered By: GitHub pages (pages.github.io)
+        -->
+
+		<script>
+			function isElementInViewport(){
+				// First Setting a flag, 1 = true, 0 = false, to show the fixed menu bar
+				var show_flag = 1;
+				// Get height of current position of page scroll
+				var scrollTop_position = $(window).scrollTop();
+				// Calculate the position of simple menu bar + half its height
+				var bottom_position = $('.page-header').offset().top + ($(window).height()/4*3);
+				// If the simple menu bar went out the viewport, then set the flag
+                		if(bottom_position <= scrollTop_position ){
+                			show_flag = 0.95;
+				}else{
+					show_flag = 0;
 				}
-		</style>
+				// Assign the value of the flag as opcaity attribute to the fixed menu bar
+				$('.page-navigation').css("opacity", show_flag);
+				$('.page-navigation h1 a').css("opacity", show_flag);
+			}
+			// Calling above function on each scroll step
+			$(window).scroll(isElementInViewport);
+		</script>
+        
+        
+        <script>
+			function scrollToElement(selector, time){
+				time = typeof(time) != 'undefined' ? time : 1200;
+				$('html, body').animate({scrollTop: $(selector).offset().top}, time);
+			}
+
+			$(document).ready(function(){
+				// Sctoll to element //
+				$("#page-projects-link").click(function(){
+					scrollToElement('#page-projects-anchor');
+				});
+				$("#page-portfolio-link").click(function(){
+					scrollToElement('#page-portfolio-anchor');
+				});
+				$("#page-works-link").click(function(){
+					scrollToElement('#page-works-anchor');
+				});
+				$("#page-contact-link").click(function(){
+					scrollToElement('#page-contact-anchor');
+				});
+
+                $("#page-home-menu").click(function(){
+					scrollToElement('#page-home-anchor');
+				});
+				$("#page-projects-menu").click(function(){
+					scrollToElement('#page-projects-anchor');
+				});
+				$("#page-portfolio-menu").click(function(){
+					scrollToElement('#page-portfolio-anchor');
+				});
+				$("#page-works-menu").click(function(){
+					scrollToElement('#page-works-anchor');
+				});
+				$("#page-contact-menu").click(function(){
+					scrollToElement('#page-contact-anchor');
+				});
+			});
+		</script>
 	</head>
-    
 	<body>
-	<pre class="codes">
-	<span class="comment">#include &lt;stdio.h&gt;
-	#include &lt;time.h&gt;
-	#include &lt;string.h&gt;</span>
-	int <span class="animate9">main(int argc</span>, char *argv[]){
+		<nav class="page-navigation page-grid-sixteen-sixteen">
+			<div class="page-grid-four-sixteen">
+				<!--Logo-->
+				<hgroup>
+					<h1><a id="page-home-menu">Aliireeza T.</a></h1>
+				</hgroup>
+			</div>
+			<div class="page-grid-eight-sixteen">
+				<!--Nvigation Link-->
+				<center>
+					<a id="page-projects-menu">Projects</a>
+					<a id="page-portfolio-menu">Portfolio</a>
+					<a id="page-works-menu">Works</a>
+					<a id="page-contact-menu">Contact</a>
+				<center>
+			</div>
+			<div class="page-grid-four-sixteen" style="text-align:right;">
+				<!--Link to my Personal Blog-->
+				<a href="http://aliireeza.tumblr.com/" class="blog"><i class="fa fa-rocket fa-2x"></i></a>
+			</div>
+		</nav>
 
-		<span class="comment animate7">//who am i?</span>
-		printf ( "<b>aliireeza teymoorian</b> \n" );
-		printf ( "<span class="animate3">gnu/linux</span> programmer, mobile app <span class="animate1">developer</span>, web <span class="animate2">front-end designer</span>" );
-
-		<span class="comment animate8">//visit somewhere else</span>
-		if ( argc >= 2 ) {
-			if ( strcmp ( argv[1], "<span class="animate4">you_want_to_read_something_cool</span>" ) )
-				<a href="http://aliireeza.tumblr.com">blog ( "persian" )</a>;
-			elseif ( strcmp ( argv[1], "<span class="animate5">you_want_to_see_my_works</span>" ) )
-				<a href="http://aliireeza.github.io">portfolio ( time ( 0 ) )</a>;
-			elseif ( strcmp ( argv[1], "<span class="animate3">these_are_images_from_around</span>" ) )
-				<a href="instagram.com/aliireeza_t">projects ( "instagram" )</a>;
-			elseif ( strcmp ( argv[1], "<span class="animate6">you_want_to_know_more_about_me</span>" ) )
-				<a href="https://twitter.com">biography ( "@aliireeza" )</a>;
-			else
-				<a href="mailto:teymoorian@gmail.com">contact_me ( )</a>;
-		}
-
-		// made in iran, tehran. <span class="animate10">&copy; 2014</span>
-		// this page <span class="animate9">will change</span> to a really cool website at <span class="animate9">next year</span> january 1st :)
-		<span class="comment animate10">return 0;</span>
-	}
-	</pre>
+		<!--Introduction-->
+        <div class="page-content">
+            <header class="page-header" id="page-home-anchor">
+                <hgroup>
+                    <h1>Aliireeza T.</h1>
+                    <h2>I Create Web & Software, Since 1872 ;) </h2>
+                </hgroup>
+                <span class="page-header-biography">
+                    My name is Aliireeza Teymoorian, 29 y.o., from Iran, Tehran.
+                    Bachelor of science in Electrical Engineering and master of science in Secure Communications.
+                    I am a GNU/Linux systems administrator, web designer and iOS application developer.
+                </span>
+                <span class="page-header-simple-menu">
+                    <a id="page-projects-link"><i class="fa fa-flask fa-2x"></i><br>My Projects</a>
+					<a id="page-portfolio-link"><i class="fa fa-suitcase fa-2x"></i><br>Portfolio</a>
+					<a id="page-works-link"><i class="fa fa-wrench fa-2x"></i><br>My Works</a>
+					<a id="page-contact-link"><i class="fa fa-phone fa-2x"></i><br>Contact Me</a>
+                </span>
+            </header>
+                    
+            
+            <!--My Projects-->
+            <section class="page-projects" id="page-projects-anchor">
+                <header class="page-projects-header">
+                    <h1>My Projects</h1>
+                </header>
+                <article class="page-projects-content">
+                    <article class="page-projects-content-column">
+                        <div class="page-content-gap1">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-graduation-cap fa-5x"></i><br>
+                                        Open Source Programming Wall
+                                        <br><br>
+                                        Under Construction<br>
+					October 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-projects-content-column">
+                        <div class="page-content-gap2">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-gift fa-5x"></i><br>
+                                        Surprise Me
+                                        <br><br><br>
+                                        Under Construction<br>
+					March 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-projects-content-column">
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-linux fa-5x"></i><br>
+                                        GNU/Linux Repositories
+                                        <br><br><br>
+                                        Under Construction<br>
+					February 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+                <footer class="page-projects-footer">
+                    <p>
+                        
+                    </p>
+                </footer>
+            </section>
+            
+            
+            <!--My Portfolio-->
+            <section class="page-portfolio" id="page-portfolio-anchor">
+                <header class="page-portfolio-header">
+                    <h1>My Portfolio</h1>
+                </header>
+                <article class="page-portfolio-content">
+                    <article class="page-portfolio-content-column">
+                        <div class="page-content-gap1">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-coffee fa-5x"></i><br>
+                                        No-SQL Mark-Down CMS
+                                        <br><br><br>
+                                        Under Construction<br>
+					July 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-globe fa-5x"></i><br>
+                                        Persian Echo Font
+                                        <br><br><br>
+                                        Under Construction<br>
+					I have No Idea ;)
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-portfolio-content-column">
+                        <div class="page-content-gap2">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-clock-o fa-5x"></i><br>
+                                        Shellman Hour
+                                        <br><br><br>
+                                        Under Construction<br>
+					August 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-portfolio-content-column">
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-share-alt fa-5x"></i><br>
+                                        Scrapbook Reader
+                                        <br><br><br>
+                                        Under Construction<br>
+					December 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href>
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+                <footer class="page-portfolio-footer">
+                    <p>
+                        
+                    </p>
+                </footer>
+            </section>
+            
+            
+            <!--My Works-->
+            <section class="page-works" id="page-works-anchor">
+                <header class="page-works-header">
+                    <h1>My Works</h1>
+                </header>
+                <article class="page-works-content">
+                    <article class="page-works-content-column">
+                        <div class="page-content-gap1">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-microphone fa-5x"></i><br>
+                                        Jurassic Park Audio Book
+                                        <br><br><br>
+                                        Under Construction<br>
+					April 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-book fa-5x"></i><br>
+                                        Programming Languages Book
+                                        <br><br>
+                                        Under Construction<br>
+					July 2015
+                                    </p>
+                                </span>
+                            </a> 
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-works-content-column">
+                        <div class="page-content-gap2">
+                            &nbsp;&nbsp;
+                        </div>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-camera fa-5x"></i><br>
+                                        Street Photography
+                                        <br><br><br>
+                                        Under Construction<br>
+					Soon
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                    <article class="page-works-content-column">
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <i class="fa fa-book fa-5x"></i><br>
+                                        Free Software Book
+                                        <br><br><br>
+                                        Under Construction<br>
+					March 2015
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="page-content-block">
+                            <a href="">
+                                <span>
+                                    <p>
+                                        <br><br>
+                                        <i class="fa fa-question fa-5x"></i>
+                                        <br><br>
+                                    </p>
+                                </span>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+                <footer class="page-works-footer">
+                    <p>
+                        
+                    </p>
+                </footer>
+            </section>
+            
+            
+            
+            <!--Contact Me-->
+            <footer class="page-footer"  id="page-contact-anchor">
+                <h1>Contact Me</h1>
+                <span class="contact">
+                    <i class="fa fa-map-marker fa-1x"></i>&nbsp;&nbsp;Address: <a href="https://www.google.com/maps/place/Tehran/@35.7014396,51.3498186,11">Tehran, Iran</a>, Planet Earth, Solar System, Milky Way Galaxy<br>
+					<i class="fa fa-share-alt fa-1x"></i>&nbsp;&nbsp;Social Networks:<br><br>
+					<p>
+                        <a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a>
+                        <a href="http://instagram.com/aliireeza_t"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
+                        <a href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook fa-2x"></i><br>Facebook</a>
+                        <a href="https://plus.google.com/+AlirezaTeymoorian/"><i class="fa fa-google-plus fa-2x"></i><br>Google+</a>
+                        <a href="https://www.youtube.com/channel/UCFscU860kCBW7g1lGeUNH1Q"><i class="fa fa-youtube fa-2x"></i><br>Youtube</a>
+                        <a href="https://github.com/Aliireeza"><i class="fa fa-github fa-2x"></i><br>GitHub</a><br><br>
+                    </p>
+					<br><br><i class="fa fa-home fa-1x"></i>&nbsp;&nbsp;Home: &nbsp;&nbsp;&nbsp;
+					<a href="http://aliireeza.tumblr.com">aliireeza.tumblr.com</a><br>
+                    <i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;e-Mail: &nbsp;&nbsp;&nbsp;
+					<a href="mailto:teymoorian@gmail.com">teymoorian [at] gmail [dot] com</a><br>
+                    
+					<br><br>
+                </span>
+                <span class="copy">
+                    &copy 2009-2015
+                </span>
+            </footer>    
+        </div>
 	</body>
 </html>
