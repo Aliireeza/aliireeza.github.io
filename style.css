@@ -80,7 +80,7 @@ span.page-header-simple-menu a:hover{background:#333333;color:#fafafa;}
 .page-content-block{height:260px;width:260px;margin:20px;background:#fcfcfc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;display:block;}
 .page-content-block span{width:258px;height:258px;padding:0px;margin:0;display:inline-block;transition: background 0.5s ease-in-out;-webkit-transition: background 0.5s ease-in-out;-moz-transition:background 0.5s ease-in-out;-ms-transition: background 0.5s ease-in-out;-o-transition: background 0.5s ease-in-out;text-align:center;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border:1px solid #dddddd;}
 .page-content-block span p{padding:20px;}
-.page-content-block:hover span{background:#333333;color:#fafafa;border:1px solid #222222;}
+.page-content-block:hover span{background:#333333;color:#fafafa;border:1px solid #cccccc;}
 
 
 
