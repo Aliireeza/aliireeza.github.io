@@ -74,6 +74,6 @@ only screen and (-o-min-device-pixel-ratio:2),
 only screen and (min-device-pixel-ratio:2),
 only screen and (min-resolution:192dpi) { 
 	body{
-		font-size:1.1em;
+		font-size:1.05em;
 		}
 	}
