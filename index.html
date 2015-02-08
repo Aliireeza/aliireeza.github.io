@@ -17,317 +17,42 @@
 		<!-- StyleSheets and Scripts -->
 		<link rel="shortcut icon" href="">
 		<link rel="stylesheet" href="./style.css" type="text/css">
-<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-		
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
-        
-        <!--
-        Project Name: Aliireeza T. Prsonal Web Site of Github (aliireeza.github.io)
-        Designed By Aliireeza Teymoorian, January 2015
-        License: GNU/GPL v3
-        Powered By: GitHub pages (pages.github.io)
-        -->
-
-		<script>
-			function isElementInViewport(){
-				// First Setting a flag, 1 = true, 0 = false, to show the fixed menu bar
-				var show_flag = 1;
-				// Get height of current position of page scroll
-				var scrollTop_position = $(window).scrollTop();
-				// Calculate the position of simple menu bar + half its height
-				var bottom_position = $('.page-header').offset().top + ($(window).height()/4*3);
-				// If the simple menu bar went out the viewport, then set the flag
-                		if(bottom_position <= scrollTop_position ){
-                			show_flag = 0.95;
-				}else{
-					show_flag = 0;
-				}
-				// Assign the value of the flag as opcaity attribute to the fixed menu bar
-				$('.page-navigation').css("opacity", show_flag);
-				$('.page-navigation h1 a').css("opacity", show_flag);
-			}
-			// Calling above function on each scroll step
-			$(window).scroll(isElementInViewport);
-		</script>
-        
-        
-        <script>
-			function scrollToElement(selector, time){
-				time = typeof(time) != 'undefined' ? time : 1200;
-				$('html, body').animate({scrollTop: $(selector).offset().top}, time);
-			}
-
-			$(document).ready(function(){
-				// Sctoll to element //
-				$("#page-portfolio-link").click(function(){
-					scrollToElement('#page-portfolio-anchor');
-				});
-				$("#page-contact-link").click(function(){
-					scrollToElement('#page-contact-anchor');
-				});
-
-                $("#page-home-menu").click(function(){
-					scrollToElement('#page-home-anchor');
-				});
-				$("#page-portfolio-menu").click(function(){
-					scrollToElement('#page-portfolio-anchor');
-				});
-				$("#page-contact-menu").click(function(){
-					scrollToElement('#page-contact-anchor');
-				});
-			});
-		</script>
 	</head>
 	<body>
-		<nav class="page-navigation page-grid-sixteen-sixteen">
-			<div class="page-grid-four-sixteen">
-				<!--Logo-->
-				<hgroup>
-					<h1><a id="page-home-menu">Aliireeza T.</a></h1>
+		<header class="page-header four-quarter">
+			<div class="one-quarter">
+				&nbsp;
+			</div>
+			<div class="two-quarter">
+				<hgroup class="page-title">
+					<h1><i class="fa fa-coffee fa-2x"></i><br><br>Under Construction</h1>
+					<h2>Aliireeza teymoorian's Personal GitHub Page</h2>
 				</hgroup>
+				<nav class="page-navigation">
+                        		<a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="http://aliireeza.tumblr.com"><i class="fa fa-tumblr fa-2x"></i></a>
+                        		<a href="http://instagram.com/aliireeza_t"><i class="fa fa-instagram fa-2x"></i></a>
+                        		<a href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook fa-2x"></i></a>
+                        		<a href="https://github.com/Aliireeza"><i class="fa fa-github fa-2x"></i></a>
+					<a href="hmailto:teymoorian@gmail.com"><i class="fa fa-envelope fa-2x"></i></a><br><br>
+				</nav>
 			</div>
-			<div class="page-grid-eight-sixteen">
-				<!--Nvigation Link-->
-				<center>
-					<a id="page-portfolio-menu">My Portfolio</a>
-					<a id="page-contact-menu">Contact Me</a>
-				<center>
+			<div class="one-quarter">
+				&nbsp;
 			</div>
-			<div class="page-grid-four-sixteen" style="text-align:right;">
-				<!--Link to my Personal Blog-->
-				<a href="http://aliireeza.tumblr.com/" class="blog"><i class="fa fa-rocket fa-2x"></i></a>
-			</div>
-		</nav>
+		</header>
 
-		<!--Introduction-->
-        <div class="page-content">
-            <header class="page-header" id="page-home-anchor">
-                <hgroup>
-                    <h1>Aliireeza T.</h1>
-                    <h2>I Create Web & Software, Since 1872 ;) </h2>
-                </hgroup>
-                <span class="page-header-biography">
-                    My name is Aliireeza Teymoorian, 29 y.o., from Iran, Tehran.
-                    Bachelor of science in Electrical Engineering and master of science in Secure Communications.
-                    I am a GNU/Linux systems administrator, web designer and iOS application developer.
-                </span>
-                <span class="page-header-simple-menu">
-					<a id="page-portfolio-link"><i class="fa fa-suitcase fa-2x"></i><br>My Portfolio</a>
-					<a id="page-contact-link"><i class="fa fa-phone fa-2x"></i><br>Contact Me</a>
-                </span>
-            </header>
-                    
-            
-            <!--My Projects-->
-            <section class="page-portfolio" id="page-portfolio-anchor">
-                <header class="page-portfolio-header">
-                    <h1>My Projects</h1>
-                </header>
-                <article class="page-portfolio-content">
-                    <article class="page-portfolio-content-column">
-                        <div class="page-content-gap1">
-                            &nbsp;&nbsp;
-                        </div>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-graduation-cap fa-5x"></i><br>
-                                        Open Source Programming Wall
-                                        <br><br>
-                                        Under Construction<br>
-					October 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-coffee fa-5x"></i><br>
-                                        No-SQL Mark-Down CMS
-                                        <br><br><br>
-                                        Under Construction<br>
-					July 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-share-alt fa-5x"></i><br>
-                                        Scrapbook Reader
-                                        <br><br><br>
-                                        Under Construction<br>
-					December 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-book fa-5x"></i><br>
-                                        Programming Languages Book
-                                        <br><br>
-                                        Under Construction<br>
-					July 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                    </article>
-                    <article class="page-portfolio-content-column">
-                        <div class="page-content-gap2">
-                            &nbsp;&nbsp;
-                        </div>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-gift fa-5x"></i><br>
-                                        Surprise Me
-                                        <br><br><br>
-                                        Under Construction<br>
-					March 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-globe fa-5x"></i><br>
-                                        Persian Echo Font
-                                        <br><br><br>
-                                        Under Construction<br>
-					I have No Idea ;)
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-microphone fa-5x"></i><br>
-                                        Jurassic Park Audio Book
-                                        <br><br><br>
-                                        Under Construction<br>
-					April 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                    	<article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-video-camera fa-5x"></i><br>
-                                        Linux Administration Screen Casts
-                                        <br><br>
-                                        Under Construction<br>
-					Soon
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                    </article>
-                    <article class="page-portfolio-content-column">
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-linux fa-5x"></i><br>
-                                        GNU/Linux Repositories
-                                        <br><br><br>
-                                        Under Construction<br>
-					February 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-clock-o fa-5x"></i><br>
-                                        Shellman Hour
-                                        <br><br><br>
-                                        Under Construction<br>
-					August 2015
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="http://tehran-ph.tumblr.com">
-                                <span>
-                                    <p>
-                                    	<br><br>
-                                        <i class="fa fa-camera fa-5x"></i><br>
-                                        Street Photography
-                                        <br>
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                        <article class="page-content-block">
-                            <a href="">
-                                <span>
-                                    <p>
-                                        <i class="fa fa-magic fa-5x"></i><br>
-                                        I Can't Tell You This ;)
-                                        <br><br>
-                                    </p>
-                                </span>
-                            </a>
-                        </article>
-                    </article>
-                </article>
-                <footer class="page-portfolio-footer">
-                    <p>
-
-                    </p>
-                </footer>
-            </section>
-
-            <!--Contact Me-->
-            <footer class="page-footer"  id="page-contact-anchor">
-                <h1>Contact Me</h1>
-                <span class="contact">
-                    <i class="fa fa-map-marker fa-1x"></i>&nbsp;&nbsp;Address: <a href="https://www.google.com/maps/place/Tehran/@35.7014396,51.3498186,11">Tehran, Iran</a>, Planet Earth, Solar System, Milky Way Galaxy<br>
-					<i class="fa fa-share-alt fa-1x"></i>&nbsp;&nbsp;Social Networks:<br><br>
-					<p>
-                        <a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a>
-                        <a href="http://instagram.com/aliireeza_t"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
-                        <a href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook fa-2x"></i><br>Facebook</a>
-                        <a href="https://plus.google.com/+AlirezaTeymoorian/"><i class="fa fa-google-plus fa-2x"></i><br>Google+</a>
-                        <a href="https://www.youtube.com/channel/UCFscU860kCBW7g1lGeUNH1Q"><i class="fa fa-youtube fa-2x"></i><br>Youtube</a>
-                        <a href="https://github.com/Aliireeza"><i class="fa fa-github fa-2x"></i><br>GitHub</a><br><br>
-                    </p>
-					<br><br><i class="fa fa-home fa-1x"></i>&nbsp;&nbsp;Home: &nbsp;&nbsp;&nbsp;
-					<a href="http://aliireeza.tumblr.com">aliireeza.tumblr.com</a><br>
-                    <i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;e-Mail: &nbsp;&nbsp;&nbsp;
-					<a href="mailto:teymoorian@gmail.com">teymoorian [at] gmail [dot] com</a><br>
-                    
-					<br><br>
-                </span>
-                <span class="copy">
-                    &copy 2009-2015
-                </span>
-            </footer>    
-        </div>
+		<footer class="page-footer four-quarter" id="page-contact-anchor">
+			<center>&copy; 1985 - Present</center>
+		</footer>
 	</body>
 </html>
