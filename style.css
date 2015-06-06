@@ -65,14 +65,10 @@ a:hover{color:#333333}
 
 
 
-.one-grid{width:12.5%;padding:0;margin:0;display:block;float:left;}
+
 .two-grid{width:25%;padding:0;margin:0;display:block;float:left;}
-.three-grid{width:37.5%;padding:0;margin:0;display:block;float:left;}
 .four-grid{width:50%;padding:0;margin:0;display:block;float:left;}
-.five-grid{width:62.5%;padding:0;margin:0;display:block;float:left;}
-.six-grid{width:75%;padding:0;margin:0;display:block;float:left;}
-.seven-grid{width:87.5%;padding:0;margin:0;display:block;float:left;}
-.eight-grid{width:100%;padding:0;margin:0;display:block;clear:both;}
+
 
 .mobile-visible{display:none;}
 .mobile-invisible{display:block;}
@@ -89,14 +85,8 @@ a:hover{color:#333333}
 	.page-content span{width:100%;float:left;padding:20px;text-align:justify;display:inline-block;
 					-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 	.page-header .page-title h1{font-family:Oswald;font-size:3.8em;font-weight:normal;padding:25% 20px 30px 20px;}
-	.one-grid{width:10%;padding:0;margin:0;display:block;float:left;}
 	.two-grid{width:20%;padding:0;margin:0;display:block;float:left;}
-	.three-grid{width:30%;padding:0;margin:0;display:block;float:left;}
 	.four-grid{width:60%;padding:0;margin:0;display:block;float:left;}
-	.five-grid{width:70%;padding:0;margin:0;display:block;float:left;}
-	.six-grid{width:80%;padding:0;margin:0;display:block;float:left;}
-	.seven-grid{width:90%;padding:0;margin:0;display:block;float:left;}
-	.eight-grid{width:100%;padding:0;margin:0;display:block;clear:both;}
 }
 
 
@@ -106,14 +96,8 @@ a:hover{color:#333333}
 	.mobile-visible{display:block;}
 	.mobile-invisible{display:none;}
 	
-	.one-grid{width:5%;padding:0;margin:0;display:block;float:left;}
 	.two-grid{width:15%;padding:0;margin:0;display:block;float:left;}
-	.three-grid{width:20%;padding:0;margin:0;display:block;float:left;}
 	.four-grid{width:70%;padding:0;margin:0;display:block;float:left;}
-	.five-grid{width:80%;padding:0;margin:0;display:block;float:left;}
-	.six-grid{width:90%;padding:0;margin:0;display:block;float:left;}
-	.seven-grid{width:95%;padding:0;margin:0;display:block;float:left;}
-	.eight-grid{width:100%;padding:0;margin:0;display:block;clear:both;}
 }
 
 
