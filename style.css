@@ -122,29 +122,33 @@ a:hover{color:#333333}
 	.page-header .page-menu{display:none;}
 	.page-navigation{display:none;}
 
-	body{background: #ffffff;color:#000000;font-size:0.85em;}
+	body{background: none;color:#000000;font-size:0.9em;}
 	a{color:#000000;}
 
-	.page-header .page-title h1{font-family:Oswald;font-size:3.4em;font-weight:normal;padding:100px 20px 30px 20px;}
+	section, footer{page-break-before: always;}
+	.page-header{height:auto;}
+	.page-header .page-title h1{font-family:Oswald;font-size:3.4em;font-weight:normal;padding:45% 20px 30px 20px;}
 	.page-header .page-title h2{font-family:Open Sans;font-size:1.5em;font-weight:normal;padding:10px 20px 40px 20px;line-height:180%;}
 
 	.page-content{padding:30px 0px;}
 	.page-content h1{page-break-after:avoid;}
 	.page-content span{width:100%;float:left;padding:20px;text-align:justify;display:inline-block;
-					-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+				-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+				column:2;}
 	.page-content h1{padding:30px 20px 0px 20px;}
 	.page-content a{display:inline-block;text-align:left;width:auto;padding:10px;margin:5px 5px 5px 10px;font-size:1.1em;}
 	.page-content a i{display:none;}
 	.page-content a br{display:none;}
 	.page-content a:after{content: ": " attr(href);dircetion:rtl;}
 
+	.page-footer h1{padding:30px 20px 0px 20px;}
 	.page-footer a{display:inline-block;text-align:left;width:auto;padding:0px 20px;margin:0px;font-size:1.1em;}
 	.page-footer a:after{content: ": " attr(href);dircetion:rtl;}
 
 	.two-grid{width:10%;padding:0;margin:0;display:block;float:left;}
 	.four-grid{width:80%;padding:0;margin:0;display:block;float:left;}
 
-	@page{margin:2cm 0cm 2cm 0cm;}
+	@page{margin:1.5cm 0cm 1.5cm 0cm;}
 
 	.QRCodeBox {
 		margin:0px auto;
