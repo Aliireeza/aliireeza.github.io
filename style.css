@@ -9,8 +9,8 @@ a:hover{color:#333333}
 .page-navigation a{padding:20% 10%;margin:1px 0px;font-size: 0.8em;clear:both;display:inline-block;width:80%;text-align:center;background:#333333;
 				border-radius:0px 3px 3px 0px;-webkit-border-radius:0px 3px 3px 0px;-moz-border-radius:0px 3px 3px 0px;
 				-o-border-radius:0px 3px 3px 0px;-ms-border-radius:0px 3px 3px 0px;color:#fdfdfd;cursor:pointer;
-				transition: background .4s ease-in-out;-ms-transition: background .4s ease-in-out;-o-transition: background .4s ease-in-out;-moz-transition: background .4s ease-in-out;-webkit-transition: background .4s ease-in-out;
-				transition: color .4s ease-in-out;-ms-transition: color .4s ease-in-out;-o-transition: color .4s ease-in-out;-moz-transition: color .4s ease-in-out;-webkit-transition: color .4s ease-in-out;}
+				transition: background 0.4s ease-in-out;-ms-transition: background 0.4s ease-in-out;-o-transition: background 0.4s ease-in-out;-moz-transition: background 0.4s ease-in-out;-webkit-transition: background 0.4s ease-in-out;
+				transition: color 0.4s ease-in-out;-ms-transition: color 0.4s ease-in-out;-o-transition: color 0.4s ease-in-out;-moz-transition: color 0.4s ease-in-out;-webkit-transition: color 0.4s ease-in-out;}
 .page-navigation a:hover{padding:30% 20% 30% 45%;}
 
 .page-content{width:100%;display:block;clear:both;}
