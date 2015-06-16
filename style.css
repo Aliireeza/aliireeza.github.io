@@ -79,7 +79,7 @@ a:hover{color:#333333}
 	.four-grid{width:60%;padding:0;margin:0;display:block;float:left;}
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1280px){
 	.tablet-visible{display:block;}
 	.tablet-invisible{display:none;}
 	
@@ -90,7 +90,14 @@ a:hover{color:#333333}
 	.four-grid{width:80%;padding:0;margin:0;display:block;float:left;}
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:750px){
+
+	::selection{background:#ffe40f;color:#222222;}
+	::-moz-selection{background:#ffe40f;color:#222222;}
+	::-webkit-selection{background:#ffe40f;color:#222222;}
+	::-ms-selection{background:#ffe40f;color:#222222;}
+	::-o-selection{background:#ffe40f;color:#222222;}
+
 	.mobile-visible{display:block;}
 	.mobile-invisible{display:none;}
 	
