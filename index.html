@@ -76,13 +76,11 @@
 			$(document).ready(function(){
 				$("#navigation-introduction").click(function(){scrollToElement('#page-introduction');});
 				$("#navigation-projects").click(function(){scrollToElement('#page-projects');});
-				$("#navigation-skills").click(function(){scrollToElement('#page-skills');});
 				$("#navigation-portfolio").click(function(){scrollToElement('#page-portfolio');});
 				$("#navigation-interests").click(function(){scrollToElement('#page-interests');});
 				$("#navigation-funprojects").click(function(){scrollToElement('#page-funprojects');});
 				$("#navigation-works").click(function(){scrollToElement('#page-works');});
 				$("#navigation-publications").click(function(){scrollToElement('#page-publications');});
-				$("#navigation-biography").click(function(){scrollToElement('#page-biography');});
 				$("#navigation-contact").click(function(){scrollToElement('#page-contact');});
 				
 				$("#menu-projects").click(function(){scrollToElement('#page-projects');});
@@ -109,19 +107,13 @@
 					$('#navigation-introduction').css("padding",'30% 20% 30% 20%');		
 				}
 				
-				if(scrollTop_position >= $('#page-projects').offset().top - 25 && scrollTop_position < $('#page-skills').offset().top - 25){
+				if(scrollTop_position >= $('#page-projects').offset().top - 25 && scrollTop_position < $('#page-portfolio').offset().top - 25){
 					$('#navigation-projects').css("padding",'30% 20% 30% 45%');
 				}
 				else{
 					$('#navigation-projects').css("padding",'30% 20% 30% 20%');			
 				}
 				
-				if(scrollTop_position >= $('#page-skills').offset().top - 25 && scrollTop_position < $('#page-portfolio').offset().top - 25){
-					$('#navigation-skills').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-skills').css("padding",'30% 20% 30% 20%');			
-				}
 				
 				if(scrollTop_position >= $('#page-portfolio').offset().top - 25 && scrollTop_position < $('#page-interests').offset().top - 25){
 					$('#navigation-portfolio').css("padding",'30% 20% 30% 45%');
@@ -151,21 +143,15 @@
 					$('#navigation-works').css("padding",'30% 20% 30% 20%');			
 				}
 				
-				if(scrollTop_position >= $('#page-publications').offset().top - 25 && scrollTop_position < $('#page-biography').offset().top - 25){
+				if(scrollTop_position >= $('#page-publications').offset().top - 25 && scrollTop_position < $('#page-contact').offset().top - 250){
 					$('#navigation-publications').css("padding",'30% 20% 30% 45%');
 				}
 				else{
 					$('#navigation-publications').css("padding",'30% 20% 30% 20%');			
 				}
+
 				
-				if(scrollTop_position >= $('#page-biography').offset().top - 25 && scrollTop_position < $('#page-contact').offset().top - $(window).height() / 2 -25){
-					$('#navigation-biography').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-biography').css("padding",'30% 20% 30% 20%');			
-				}
-				
-				if(scrollTop_position >= $('#page-biography').offset().top + $('#page-biography').height() + $(window).height() / 2 - 25){
+				if(scrollTop_position >= $('#page-biography').offset().top + $('#page-biography').height() + $(window).height() / 2 - 250){
 					$('#navigation-contact').css("padding",'30% 20% 30% 45%');
 				}
 				else{
@@ -181,13 +167,11 @@
 		<nav class="page-navigation" id="page-navigation">
 			<a id="navigation-introduction"><i class="fa fa-home fa-2x"></i></a><br>
 			<a id="navigation-projects"><i class="fa fa-cogs fa-2x"></i></a><br>
-			<a id="navigation-skills"><i class="fa fa-briefcase fa-2x"></i></a><br>
 			<a id="navigation-portfolio"><i class="fa fa-puzzle-piece fa-2x"></i></a><br>
 			<a id="navigation-interests"><i class="fa fa-rocket fa-2x"></i></a><br>
 			<a id="navigation-funprojects"><i class="fa fa-flask fa-2x"></i></a><br>
 			<a id="navigation-works"><i class="fa fa-wrench fa-2x"></i></a><br>
 			<a id="navigation-publications"><i class="fa fa-magic fa-2x"></i></a><br>
-			<a id="navigation-biography"><i class="fa fa-birthday-cake fa-2x"></i></a><br>
 			<a id="navigation-contact"><i class="fa fa-phone fa-2x"></i></a>
 		</nav>
 		
@@ -205,11 +189,9 @@
 				</hgroup>
 				<div class="page-menu">
 					<a id="menu-projects"><i class="fa fa-cogs fa-2x"></i><br>Projects</a>
-					<a id="menu-skills"><i class="fa fa-briefcase fa-2x"></i><br>Skills</a>
 					<a id="menu-portfolio"><i class="fa fa-puzzle-piece fa-2x"></i><br>Portfolio</a>
-					<a class="tablet-invisible" id="menu-interests"><i class="fa fa-rocket fa-2x"></i><br>Interests</a>
-					<br class="tablet-invisible">
 					<a id="menu-funprojects"><i class="fa fa-flask fa-2x"></i><br>Laboratory</a>
+					<br class="tablet-visible">
 					<a class="tablet-invisible" id="menu-works"><i class="fa fa-puzzle-piece fa-2x"></i><br>Works</a>
 					<a id="menu-publications"><i class="fa fa-book fa-2x"></i><br>Publications</a>
 					<a id="menu-contact"><i class="fa fa-phone fa-2x"></i><br>Contact</a>
@@ -282,9 +264,21 @@
 			<div class="four-grid">
 				<h1>My Portfolio</h1><br>
 				<span>
-					This was a really fun project, creating <b>Ubuntu</b>, <b>Fedora</b>, <b>CentOS</b> and <b>Debian</b> repositories in the state data center and designing a simple
+					<b>Iran's Linux Repositories</b>: This was a really fun project, creating <b>Ubuntu</b>, <b>Fedora</b>, <b>CentOS</b> and <b>Debian</b> repositories in the state data center and designing a simple
 					cool website for it, endorsing the way of using these repositories and gathering comments from user, not a problem really.<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-database fa-2x"></i><br>Repositories</a></center>
+					<center><a href="./under-construction.html"><i class="fa fa-qq fa-2x"></i><br>Repositories</a></center>
+				</span>
+
+				<span>
+					<b>SimpleFireWall</b>: This simple firewall could manipulate your network teraffic due to the rules you added to it. It could <b>Filter</b>, <b>Intercept</b>, <b>Track</b> or <b>Hijack</b> traffic on specific <b>MAC</b>, <b>IP</b> and <b>PORT</b> addresses and specific ordinary protocols like <b>ARP</b>, <b>IPv4</b>, <b>IPv6</b>, <b>TCP</b>, <b>UDP</b>, <b>ICMP</b>, <b>IGMP</b> or all of them at once, could be a good example about how a LKM hooks <b>Netfilter</b> or use procfs, and the architecture and logical design of a firewall.<br><br>
+					<center><a href="https://github.com/Aliireeza/Linux-Kernel-Module-Programming/tree/master/Simple-Firewall"><i class="fa fa-fire-extinguisher fa-2x"></i><br>SimpleFireWall</a></center>
+				</span>
+
+				<span>
+					<b>My Personal Github Site</b>: This is actually this very website, it is simple, elegant and full of small features. I like its simplicity and purity of design. I tried as <b>Steve Jobs</b> once said; <b>make a small thing unforgetable</b>, so it be responsive, adaptable, user friendly and ofcourse simple and pure, It is more representive of my personality, and infact it is my online curriculum vitae ;)
+					
+					<br><br>
+					<center><a href="https://github.com/Aliireeza/aliireeza.github.io"><i class="fa fa-github-alt fa-2x"></i><br>GitHub Site</a></center>
 				</span>
 			</div>
 			<div class="two-grid">
@@ -401,7 +395,37 @@
 			</div>
 		</section>
 			
-			
+		<section class="page-content" id="page-articles">
+			<div class="two-grid">
+				&nbsp;
+			</div>
+			<div class="four-grid">
+				<h1>Articles & Notes</h1><br>
+				<span>A. Teymoorian, “Why The Government Should Migrate to Free/Open Source Software ”, Peivast Magazine, Vol. 9, P. 16, Tehran, Iran, 2013.</span>
+				<span>A. Teymoorian, “Accidental Movement in Software Industry which Have Changed Every Thing”, Asre Ertebat Magazine, Vol. 671, P. 8, Tehran, Iran, September 2014.</span>
+				<span>A. Teymoorian, “Copy Left vs. Copy Right, Keep Saving Freedom of a Software User”, Asre Ertebat Magazine, Vol. 673, P. 8, Tehran, Iran, September 2014.</span>
+				<span>A. Teymoorian, “Open Source Business Models, How You Could Make Money without Selling any Softwares? ”, Asre Ertebat Magazine, Vol. 675, P. 10, Tehran, Iran, September 2014</span>
+				<span>A. Teymoorian, “Enlightened Students Uprising Against Their famous Teachers”, Asre Ertebat Magazine, Vol. 676, P. 13, Tehran, Iran, September 2014.</span>
+				<span>A. Teymoorian, “An Introduction to Open Source Software Security Concepts”, Asre Ertebat Magazine, Vol. 677, P. 13, Tehran, Iran, October 2014.</span>
+				<span>A. Teymoorian, “We Create Software, We Create Linux, an Introduction to Free/Open Source Software Development Methodology”, Asre Ertebat Magazine, Vol. 678, P. 13, Tehran, Iran, October 2014.</span>
+				<span>A. Teymoorian, “Persian Language's Problem in Computer World, The Open Source Solutions”, Asre Ertebat Magazine, Vol. 679, P. 13, Tehran, Iran, October 2014.</span>
+				<span>A. Teymoorian, “Free/Open Source Software in Green Technologies”, Asre Ertebat Magazine, Vol. 680, P. 13, Tehran, Iran, October 2014.</span>
+				<span>A. Teymoorian, “an Introduction to Free/Open Source Software and Hand Held Operation Systems”, Asre Ertebat Magazine, Vol. 681, P. 14, Tehran, Iran, October 2014.</span>
+				<span>A. Teymoorian, “Why Government Should use Free/Open Source Software and What Would be the Achievements”, Asre Ertebat Magazine, Vol. 682, P. 13, Tehran, Iran, November 2014</span>
+				<span>A. Teymoorian, “An Introduction to GNU/Linux Distribution and Why Countries Seeking a National Linux Distribution”, Asre Ertebat Magazine, Vol. 683, P. 13, Tehran, Iran, November 2014.</span>
+				<span>A. Teymoorian, “An Introduction to Free/Open Source File Formats and Standards”, Asre Ertebat Magazine, Vol. 684, P. 13, Tehran, Iran, November 2014.</span>
+				<span>A. Teymoorian, “Software Repositories, Design, Architecture and Achievements”, Asre Ertebat Magazine, Vol. 685, P. 13, Tehran, Iran, November 2014.</span>
+				<span>A. Teymoorian, “Open Source Software Maturity Level Concepts and Standard”, Asre Ertebat Magazine, Vol. 686, P. 13, Tehran, Iran, December 2014.</span>
+				<span>A. Teymoorian, “An Introduction to Variation of GNU/Linux Graphical Desktop Environments”, Asre Ertebat Magazine, Vol. 687, P. 13, Tehran, Iran, December 2014.</span>
+				<span>A. Teymoorian, “An Introduction to Variation of GNU/Linux Distributions”, Asre Ertebat Magazine, Vol. 688, P. 13, Tehran, Iran, December 2014.</span>
+				<span>A. Teymoorian, “Introduce to your GNU/Linux Based Virtual Private Professional Work Office”, Asre Ertebat Magazine, Vol. 689, P. 13, Tehran, Iran, December 2014.</span>
+				<span>A. Teymoorian, “An Introduction to Development Tools and Environment in GNU/Linux”, Asre Ertebat Magazine, Vol. 690, P. 15, Tehran, Iran, January 2015.</span>
+				<span>A. Teymoorian, “An Introduction to Free/Open Source Programming Languages and Database Management Systems”, Asre Ertebat Magazine, Vol. 691, Vol. 692 & Vol. 693, Tehran, Iran, January 2015.</span>
+			</div>
+			<div class="two-grid">
+				&nbsp;
+			</div>
+		</section>
 			
 			
 		<section class="page-content" id="page-biography">
@@ -467,7 +491,7 @@
 					<a href="./under-construction.html"><i class="fa fa-phone fa-1x"></i>&nbsp;&nbsp;Phone</a><br>
 					<a href="https://github.com/Aliireeza"><i class="fa fa-github fa-1x"></i>&nbsp;&nbsp;GitHub</a><br>
 					<a href="https://aliireeza.tumblr.com"><i class="fa fa-tumblr fa-1x"></i>&nbsp;&nbsp;Weblog</a><br>
-					<a href="https://medium.com/@Aliireeza"><i class="fa fa-medium fa-1x"></i>&nbsp&nbsp;Medium</a><br>
+					<a href="https://medium.com/@Aliireeza"><i class="fa fa-medium fa-1x"></i>&nbsp;&nbsp;Medium</a><br>
 					<a href="https://www.linkedin.com/profile/view?id=193876254"><i class="fa fa-linkedin fa-1x"></i>&nbsp;&nbsp;Linkedin</a><br><br>
 					<a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-1x"></i>&nbsp;&nbsp;Twitter</a><br>
 					<a href="https://instagram.com/aliireeza_t/"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;Instagram</a><br>
