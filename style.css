@@ -85,7 +85,7 @@ a:hover{color:#333333}
 	
 	.page-content span{width:100%;float:left;padding:20px;text-align:justify;display:inline-block;
 					-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-	.page-header .page-title h1{font-family:Oswald;font-size:3.8em;font-weight:normal;padding:25% 20px 30px 20px;}
+	.page-header .page-title h1{font-family:Oswald;font-size:3.8em;font-weight:normal;padding:20% 20px 30px 20px;}
 	.two-grid{width:10%;padding:0;margin:0;display:block;float:left;}
 	.four-grid{width:80%;padding:0;margin:0;display:block;float:left;}
 }
