@@ -44,7 +44,7 @@ a:hover{color:#333333}
 .page-footer{width:100%;display:block;clear:both;}
 .page-footer h1{font-family:Open Sans;font-size:1.6em;font-weight:normal;padding:15% 20px 30px 20px;}
 .page-footer p{padding:10px 20px;text-align:justify;}
-.page-footer a{cursor:pointer;display:inline-block;text-align:center;width:100px;padding:10px;margin:5px 5px 5px 10px;}
+.page-footer a{cursor:pointer;display:inline-block;text-align:center;width:120px;padding:10px;margin:5px 5px 5px 10px;}
 .page-footer a:hover{background:#333333;color:#fdfdfd;}
 .page-footer span{text-align:right;color:#cccccc;font-family:Dosis;font-size:1.2em;font-weight:normal;
 					width:100%;display:inline-block;clear:both;padding:25px 0 0 0;}
