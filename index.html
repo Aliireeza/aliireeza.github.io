@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Aliireeza T.</title>
-		
-		<!--Meta Tags-->
+  <head>
+    <meta charset="utf-8">
+    <title>Aliireeza T.</title>
+
+    <!--Meta Tags-->
 		<meta name="title" content="Aliireeza T.">
 		<meta name="author" content="Aliireeza T, Alireza Teymoorian">
 		<meta name="publisher" content="Aliireeza T.">
@@ -13,502 +13,78 @@
 		<meta name="keywords" content="Allireza, Aliireeza, Teymoorian, Go-Lang, PHP, Ruby, Kernel Module, Linux Programming">
 		<meta name="robots" content="index, follow">
 		<meta name="generator" content="Pulsar Star Software Company">
-			
-			
+
+
 		<!--Stylesheets and Scripts-->
 		<link rel="shortcuticon" href="./fav.jpg">
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-			
+
 		<!--Online Fonts From Various Sources-->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-		
-		
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
 		<!--
 			Project Name: My Personal GitHub Page, aliireeza.github.io
 			Designed By: Aliireeza T. (Alireza Teymoorian)
 			License: GNU/GPL v3
 			Powered By: GitHub Pages, pages.github.io
-			Created By Using: HTML5, CSS3, JavaScript, JQuery, Font Awesome, Google Fonts, on OS X 10.10.3 Yosemite with Visual Studio Code
+			Created By Using: HTML5, CSS3, JavaScript, JQuery, Font Awesome, Google Fonts, on OS X 10.11.1 EL Capitan with Atom Code Editor
 		-->
-		
-		<script>
-			function isElementInViewport(){
-				//First setting a flag, 1 = true, 0 = false, to show the fixed menu bar
-				var show_flag = 1;
-				//Get height of current position of page scroll
-				var scrollTop_position = $(window).scrollTop();
-				//Calculate the position of simple menu bar + half its height
-				var bottom_position = $('.page-header').offset().top + ($(window).height()/4*3);
-				//If the simple menu bar went out the viewport, then set the flag
-				if(bottom_position <= scrollTop_position){
-					show_flag = 1;
-				}else{
-					show_flag = 0;
-				}
-				//calculate the correct position of the fixed menu
-				$('.page-navigation').css("top", ($(window).height()-$('.page-navigation').height())/2);
-				//Assign the value of flag to a equation to calcuate the correct position of the menu
-				$('.page-navigation').css("margin-left", (400*show_flag)-400);
-			}
-			
-			//Calling above function on each scroll step
-			$(window).scroll(isElementInViewport);
-		</script>
-		
-		<script>
-			function scrollToElement(selector, time){
-				time = typeof(time) != 'undefined' ? time : 1000;
-				var cur_position = $(selector).offset().top / $(window).height();
-				var top_position = $(window).scrollTop() / $(window).height();
-				if(cur_position > top_position){
-					var temp_var = cur_position;
-					cur_position = top_position;
-					top_position = temp_var;
-				}
-				time = (top_position - cur_position) * 400;
-				$('html, body').animate({scrollTop: $(selector).offset().top}, time);				
-			}
-			
-			$(document).ready(function(){
-				$("#navigation-introduction").click(function(){scrollToElement('#page-introduction');});
-				$("#navigation-projects").click(function(){scrollToElement('#page-projects');});
-				$("#navigation-portfolio").click(function(){scrollToElement('#page-portfolio');});
-				$("#navigation-interests").click(function(){scrollToElement('#page-interests');});
-				$("#navigation-funprojects").click(function(){scrollToElement('#page-funprojects');});
-				$("#navigation-works").click(function(){scrollToElement('#page-works');});
-				$("#navigation-publications").click(function(){scrollToElement('#page-publications');});
-				$("#navigation-contact").click(function(){scrollToElement('#page-contact');});
-				
-				$("#menu-projects").click(function(){scrollToElement('#page-projects');});
-				$("#menu-skills").click(function(){scrollToElement('#page-skills');});
-				$("#menu-portfolio").click(function(){scrollToElement('#page-portfolio');});
-				$("#menu-interests").click(function(){scrollToElement('#page-interests');});
-				$("#menu-funprojects").click(function(){scrollToElement('#page-funprojects');});
-				$("#menu-works").click(function(){scrollToElement('#page-works');});
-				$("#menu-publications").click(function(){scrollToElement('#page-publications');});
-				$("#menu-contact").click(function(){scrollToElement('#page-contact');});
-			})
-		</script>
-		
-		<script>
-			function isElementInViewport(){
-				//Get height of current position of page scroll
-				var scrollTop_position = $(window).scrollTop();
-				//If one section is infact in view port then select its fixed menu handlr
-				
-				if(scrollTop_position >= $('#page-introduction').offset().top - 25 && scrollTop_position < $('#page-projects').offset().top - 25){
-					$('#navigation-introduction').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-introduction').css("padding",'30% 20% 30% 20%');		
-				}
-				
-				if(scrollTop_position >= $('#page-projects').offset().top - 25 && scrollTop_position < $('#page-portfolio').offset().top - 25){
-					$('#navigation-projects').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-projects').css("padding",'30% 20% 30% 20%');			
-				}
-				
-				
-				if(scrollTop_position >= $('#page-portfolio').offset().top - 25 && scrollTop_position < $('#page-interests').offset().top - 25){
-					$('#navigation-portfolio').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-portfolio').css("padding",'30% 20% 30% 20%');		
-				}
-				
-				if(scrollTop_position >= $('#page-interests').offset().top - 25 && scrollTop_position < $('#page-funprojects').offset().top - 25){
-					$('#navigation-interests').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-interests').css("padding",'30% 20% 30% 20%');			
-				}
-				
-				if(scrollTop_position >= $('#page-funprojects').offset().top - 25 && scrollTop_position < $('#page-works').offset().top - 25){
-					$('#navigation-funprojects').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-funprojects').css("padding",'30% 20% 30% 20%');			
-				}
-				
-				if(scrollTop_position >= $('#page-works').offset().top - 25 && scrollTop_position < $('#page-publications').offset().top - 25){
-					$('#navigation-works').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-works').css("padding",'30% 20% 30% 20%');			
-				}
-				
-				if(scrollTop_position >= $('#page-publications').offset().top - 25 && scrollTop_position < $('#page-contact').offset().top - 250){
-					$('#navigation-publications').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-publications').css("padding",'30% 20% 30% 20%');			
-				}
-
-				
-				if(scrollTop_position >= $('#page-biography').offset().top + $('#page-biography').height() + $(window).height() / 2 - 250){
-					$('#navigation-contact').css("padding",'30% 20% 30% 45%');
-				}
-				else{
-					$('#navigation-contact').css("padding",'30% 20% 30% 20%');		
-				}
-			}
-			//Calling above function on each scroll step
-			$(window).scroll(isElementInViewport);
-		</script>
-
-	</head>
-	<body>
-		<nav class="page-navigation" id="page-navigation">
-			<a id="navigation-introduction"><i class="fa fa-home fa-2x"></i></a><br>
-			<a id="navigation-projects"><i class="fa fa-cogs fa-2x"></i></a><br>
-			<a id="navigation-portfolio"><i class="fa fa-puzzle-piece fa-2x"></i></a><br>
-			<a id="navigation-interests"><i class="fa fa-rocket fa-2x"></i></a><br>
-			<a id="navigation-funprojects"><i class="fa fa-flask fa-2x"></i></a><br>
-			<a id="navigation-works"><i class="fa fa-wrench fa-2x"></i></a><br>
-			<a id="navigation-publications"><i class="fa fa-magic fa-2x"></i></a><br>
-			<a id="navigation-contact"><i class="fa fa-phone fa-2x"></i></a>
-		</nav>
-		
-		<header class="page-header" id="page-introduction">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<hgroup class="page-title">
-					<h1 class="mobile-visible">Aliireeza T.</h1>
-					<h1 class="mobile-invisible">Aliireeza Teymoorian</h1>
-					<h2 class="tablet-invisible">GNU/Linux Programmer, Web Developer and Designer</h2>
-					<h3 class="tablet-invisible">Sci-Fi Enthusiast and Kingsman Secret Agent</h3>
-					<h2 class="tablet-visible">GNU/Linux Programmer, Web Developer and Designer, Kingsman Secret Agent</h2>
-				</hgroup>
-				<div class="page-menu">
-					<a id="menu-projects"><i class="fa fa-cogs fa-2x"></i><br>Projects</a>
-					<a id="menu-portfolio"><i class="fa fa-puzzle-piece fa-2x"></i><br>Portfolio</a>
-					<a id="menu-funprojects"><i class="fa fa-flask fa-2x"></i><br>Laboratory</a>
-					<br class="tablet-visible">
-					<a class="tablet-invisible" id="menu-works"><i class="fa fa-puzzle-piece fa-2x"></i><br>Works</a>
-					<a id="menu-publications"><i class="fa fa-book fa-2x"></i><br>Publications</a>
-					<a id="menu-contact"><i class="fa fa-phone fa-2x"></i><br>Contact</a>
-				</div>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</header>
-		
-		<section class="page-content" id="page-projects">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>My Projects</h1><br>
-				<p>
-				<b>Terse CMS</b>; I always wanted a <b>perfect light-weight blog system</b> that could installed on my personal host, So I started to implement it 
-				using PHP for creating its core, MySQL database management system, <b>minimalistic administrator panel</b> and simplest codex set for custom 
-				template creation, so as long as it is under construction to the first release, you could follow its <b>GitHub repository</b>, and after that
-				it will freely yours :)<br><br>
-				<center><a href="./under-construction.html"><i class="fa fa-chain fa-2x"></i><br>Terse CMS</a></center>
-				</p>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-		
-		
-		
-		<section class="page-content" id="page-skills">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>My Skills</h1><br>
-				<span>
-					<b>Web Designing</b>; with more than 12 years of experiences in web designing, I used to work with many technologies and trends in the past decade, 
-					now I'm interested in flat/smoke design with <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b> (mostly in form of <b>JQuery</b> library) and creation a free spirit
-					projects without bounds to any traditional frameworks.
-				</span>
-				<span>
-					<b>Web Developing</b>; creation of pure and simple engines for web applications, is really more fun than front-end web designing, I'm using <b>PHP</b>
-					language, with the power of <b>MySQL</b>, <b>MariaDB</b> or <b>Hadoop</b> DBMSs, to create such application, but frankly I'm not very intersted in off the shelf
-					frameworks such as Laravel or so.
-				</span>
-				<span>
-					<b>System Programming</b>; the linux operating system is really intersting under it's stupid graphical user interfaces, programming in system level using
-					its architecture and libraries, creating loadable <b>kernel module </b>or <b>device drivers</b> are really fun to my eyes. along side of a few years experiences
-					of teaching in the field, I have many personal or commercial projects here.
-				</span>
-				<span>
-					<b>Other Programming</b>; <b>Go-Lang</b> seems the system programming language of the 21st century and <b>Ruby-Lang</b> is really fun and have a very high-level syntax,
-					I really like both of them, trying to write a fun book about each of them, because they have many powerful tools for creation of convenient solutions for
-					many ordinary day-to-day computing problems.
-				</span>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-		
-		
-		
-		<section class="page-content" id="page-portfolio">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>My Portfolio</h1><br>
-				<span>
-					<b>Iran's Linux Repositories</b>: This was a really fun project, creating <b>Ubuntu</b>, <b>Fedora</b>, <b>CentOS</b> and <b>Debian</b> repositories in the state data center and designing a simple
-					cool website for it, endorsing the way of using these repositories and gathering comments from user, not a problem really.<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-qq fa-2x"></i><br>Repositories</a></center>
-				</span>
-
-				<span>
-					<b>SimpleFireWall</b>: This simple firewall could manipulate your network teraffic due to the rules you added to it. It could <b>Filter</b>, <b>Intercept</b>, <b>Track</b> or <b>Hijack</b> traffic on specific <b>MAC</b>, <b>IP</b> and <b>PORT</b> addresses and specific ordinary protocols like <b>ARP</b>, <b>IPv4</b>, <b>IPv6</b>, <b>TCP</b>, <b>UDP</b>, <b>ICMP</b>, <b>IGMP</b> or all of them at once, could be a good example about how a LKM hooks <b>Netfilter</b> or use procfs, and the architecture and logical design of a firewall.<br><br>
-					<center><a href="https://github.com/Aliireeza/Linux-Kernel-Module-Programming/tree/master/Simple-Firewall"><i class="fa fa-fire-extinguisher fa-2x"></i><br>SimpleFireWall</a></center>
-				</span>
-
-				<span>
-					<b>My Personal Github Site</b>: This is actually this very website, it is simple, elegant and full of small features. I like its simplicity and purity of design. I tried as <b>Steve Jobs</b> once said; <b>make a small thing unforgetable</b>, so it be responsive, adaptable, user friendly and ofcourse simple and pure, It is more representive of my personality, and infact it is my online curriculum vitae ;)
-					
-					<br><br>
-					<center><a href="https://github.com/Aliireeza/aliireeza.github.io"><i class="fa fa-github-alt fa-2x"></i><br>GitHub Site</a></center>
-				</span>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-			
-			
-			
-			
-		<section class="page-content" id="page-interests">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>My Interests</h1><br>
-				<p>
-				<b>Future Study</b>: I assume that Artificial Intelligence is the main context of science in future and at the edge of sigularity which will be around 2050, it will be more advanced than human intelligence, and its a very intersting area for my personal research in the field of future study, reading books like <b>The Singularity is Near</b> or <b>The Age of Spiritual Machines</b> by Raymond Kurzweil makes me realize that there are so much interesting stuffs here, and I'm so excited about it :)
-				</p>
-				<p>
-				<b>Robotics</b>: Porbably the most intersting field of computer science is Robotics. Since I read <b>The Bicentunial Man</b> and <b>I.Robot</b> by Issac Asimov when I was at high school, I'd really like to do something, so I created a <b>Maze Solver Robot</b> and then tryed to teach more intelligence and interactive behaviors to a <b> NAO Humanoid Robot</b> and then created a module to make a more human-like walking possible for him, using AI techniques. Now I'm really interested in <b>Swarm Intelligence</b> and robots
-				</p>
-				<p>
-				<b>Programming</b>: I was 12, when I wrote my very first program in <b>Quick Basic</b>, and I discovered then the undescribable magnificant feeling of the creation of a computer program. Few years later I started using Linux as my day to day operating system,  and since then I started programming with more intersting languages like <b>Ruby</b>, <b>PHP</b> or <b>Go-Lang</b>, and challenging myself in digging with the deepest level of <b>System Programming</b> for Linux kernel and still there are plenty of concepts and thousands of methods remnaing for me to learn, and I really like this.
-				</p>
-				<p>
-				<b>Sci-Fi Stories</b>: Mark Twin once said, books are for people who wish they were somewhere else, people like me, I'm rellay enjoy reading science fiction stories like The Minority Report, <b>The Foundation Serie</b> or <b>The Jurassic Park</b> or fantastic fantasy ones like <b>The Lord of the Rings</b>, <b>Harry Potter</b>, <b>Narnia Chronicles</b> or Robert Langdon series, I also try sometimes to write something of the sort, probably never to published but this could take me to a more fun different worlds of imagination ;)
-				</p>
-
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-			
-			
-			
-			
-		<section class="page-content" id="page-funprojects">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>Projects for FUN ;)</h1><br>
-				<span>
-					Sci-Fi books are my favorites, and <b>The Jurassic Park</b> and <b>The Lost World</b> by Michael Kerichton are two of the bests. so as long as 
-					finding of these books became impossible in Iran for absolutly no reason at all, I recorded the persian translations of these 
-					as a free audiobook, so you can enjoy them.<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-microphone fa-2x"></i><br>Jurassic Park</a></center>
-				</span>
-				<span>
-					My thesis in B.Sc. was about creation of a <b>Maze Solver Robot</b>, I'd really enjoy that, so after creating intelligence behaviors for
-					<b>NAO Humanoid Robot</b> in M.Sc., I planned to create a few <b>Swarm Intelligent Robots</b> for some exercises and having fun times playing with them 
-					and maybe solve simple problems :)<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-lightbulb-o fa-2x"></i><br>Swarm Bots</a></center>
-				</span>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-			
-			
-			
-			
-		<section class="page-content" id="page-works">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>My Works</h1><br>
-				<p>
-					<b>Free Software Evangelist</b>: Obsessed with the idea of <b>Free Softwares Movement</b> by richard stallman, I took participation in founding of <b>Iran's National Center of Free/OpenSource Softwares</b> to support startups and enterpreneurs across the country to use or develope software of this kind.
-				</p>
-				<p>
-					<b>Teacher (Learner)</b>: I really like teaching, because it let me to keep up with <b>new contextes</b> and learn different stuffs all the time, its more fun than every day routines ;) So I started teaching by <b>Network+</b> and <b>Web Designing</b> courses and then change the main subject to <b>Linux administration</b> and <b>programming</b>, and I still enjoy this.
-				</p>
-				<p>
-					<b>Technologies Consultant</b>: Understanding a the business environment, <b>opportunities and threats</b> which lies in their way, and bringing a clean explicit <b>road map to success</b>, is the main reason that a startup needs a consultant, So sharing my knowledge about the software market and the <b>leading technologies</b>, with cool startups in my country is another intersting field with lots of challenges to me.
-				</p>
-				<p>
-					<b>FreeLance Programmer</b>: Frankly I'm not that kind of person who could stand still or walk between lines, I always have many ideas waiting in my TODO queue for a proper time, and still I always looking for new opportunities in my favorite fields (<b>Web Developement</b>, Linux Administraion, <b>System Programming</b> and Robotics) to expand my knowledge and experience horizens.
-				</p>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-		
-		
-		
-		
-		<section class="page-content" id="page-publications">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>Publications</h1><br>
-				<span>
-					<b>Linux Kernel Module Programming Booklet</b>: Since the very first time I need to write a linux loadable <b>kernel module</b>, I have noticed
-					that there are so few useful an up to date <b>Educational Resources</b> for the topic, so I decided to put my (and my students) experiences and many other 
-					useful materials that I could find from everywhere, in a free ebook.<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-codepen fa-2x"></i><br>LKMP Book</a></center>
-				</span>
-				<span>
-					<b>Free Software World in a Galance</b>: In autumn and winter of 2014, I wrote about 20 articles about different aspects of free softwares world,
-					they published in <b>Asre Ertebat Magazine</b>. Since then I have had this Idea about writing a more complete and <b>more descriptive</b> book around
-					the free/opensource softwares, so you could have it as a free paper-free ebook ;)<br><br>
-					<center><a href="./under-construction.html"><i class="fa fa-newspaper-o fa-2x"></i><br>FSBG Book</a></center>
-				</span>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-			
-		<section class="page-content" id="page-articles">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>Articles & Notes</h1><br>
-				<span>A. Teymoorian, “Why The Government Should Migrate to Free/Open Source Software ”, Peivast Magazine, Vol. 9, P. 16, Tehran, Iran, 2013.</span>
-				<span>A. Teymoorian, “Accidental Movement in Software Industry which Have Changed Every Thing”, Asre Ertebat Magazine, Vol. 671, P. 8, Tehran, Iran, September 2014.</span>
-				<span>A. Teymoorian, “Copy Left vs. Copy Right, Keep Saving Freedom of a Software User”, Asre Ertebat Magazine, Vol. 673, P. 8, Tehran, Iran, September 2014.</span>
-				<span>A. Teymoorian, “Open Source Business Models, How You Could Make Money without Selling any Softwares? ”, Asre Ertebat Magazine, Vol. 675, P. 10, Tehran, Iran, September 2014</span>
-				<span>A. Teymoorian, “Enlightened Students Uprising Against Their famous Teachers”, Asre Ertebat Magazine, Vol. 676, P. 13, Tehran, Iran, September 2014.</span>
-				<span>A. Teymoorian, “An Introduction to Open Source Software Security Concepts”, Asre Ertebat Magazine, Vol. 677, P. 13, Tehran, Iran, October 2014.</span>
-				<span>A. Teymoorian, “We Create Software, We Create Linux, an Introduction to Free/Open Source Software Development Methodology”, Asre Ertebat Magazine, Vol. 678, P. 13, Tehran, Iran, October 2014.</span>
-				<span>A. Teymoorian, “Persian Language's Problem in Computer World, The Open Source Solutions”, Asre Ertebat Magazine, Vol. 679, P. 13, Tehran, Iran, October 2014.</span>
-				<span>A. Teymoorian, “Free/Open Source Software in Green Technologies”, Asre Ertebat Magazine, Vol. 680, P. 13, Tehran, Iran, October 2014.</span>
-				<span>A. Teymoorian, “an Introduction to Free/Open Source Software and Hand Held Operation Systems”, Asre Ertebat Magazine, Vol. 681, P. 14, Tehran, Iran, October 2014.</span>
-				<span>A. Teymoorian, “Why Government Should use Free/Open Source Software and What Would be the Achievements”, Asre Ertebat Magazine, Vol. 682, P. 13, Tehran, Iran, November 2014</span>
-				<span>A. Teymoorian, “An Introduction to GNU/Linux Distribution and Why Countries Seeking a National Linux Distribution”, Asre Ertebat Magazine, Vol. 683, P. 13, Tehran, Iran, November 2014.</span>
-				<span>A. Teymoorian, “An Introduction to Free/Open Source File Formats and Standards”, Asre Ertebat Magazine, Vol. 684, P. 13, Tehran, Iran, November 2014.</span>
-				<span>A. Teymoorian, “Software Repositories, Design, Architecture and Achievements”, Asre Ertebat Magazine, Vol. 685, P. 13, Tehran, Iran, November 2014.</span>
-				<span>A. Teymoorian, “Open Source Software Maturity Level Concepts and Standard”, Asre Ertebat Magazine, Vol. 686, P. 13, Tehran, Iran, December 2014.</span>
-				<span>A. Teymoorian, “An Introduction to Variation of GNU/Linux Graphical Desktop Environments”, Asre Ertebat Magazine, Vol. 687, P. 13, Tehran, Iran, December 2014.</span>
-				<span>A. Teymoorian, “An Introduction to Variation of GNU/Linux Distributions”, Asre Ertebat Magazine, Vol. 688, P. 13, Tehran, Iran, December 2014.</span>
-				<span>A. Teymoorian, “Introduce to your GNU/Linux Based Virtual Private Professional Work Office”, Asre Ertebat Magazine, Vol. 689, P. 13, Tehran, Iran, December 2014.</span>
-				<span>A. Teymoorian, “An Introduction to Development Tools and Environment in GNU/Linux”, Asre Ertebat Magazine, Vol. 690, P. 15, Tehran, Iran, January 2015.</span>
-				<span>A. Teymoorian, “An Introduction to Free/Open Source Programming Languages and Database Management Systems”, Asre Ertebat Magazine, Vol. 691, Vol. 692 & Vol. 693, Tehran, Iran, January 2015.</span>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
-			
-			
-		<section class="page-content" id="page-biography">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid">
-				<h1>Biography</h1><br>
-				<p>
-				My name is <b>Aliireeza Teymoorian</b>, but you probably already know that. I was born in Tehran, Iran 1985. 
-				Gratuated in bachelor of science in Electrical Engineering from <b>Guilan University</b>, 2008 and 
-				master of science in Information Technology Engineering from <b>Iran's University of Science and Technology</b> in field of Secure Communications, 2011.
-				</p>
-				<p>
-				I started my career in <b>Iran's Information Technology Organization</b>, ITO, in 2011, and I'm still working there since as head of 
-				software testing department and free/opensource softwares advisor. Also I'm working as a <b>Freelance Web Designer and Developer</b> and
-				linux system level programming teacher as my part time jobs.
-				</p>
-				<p>
-				Also I really intersted in robotics, and I have many experiences within creation of <b>Intelligence Interactive Behaviors</b> for humanoid robots, 
-				and I love science fiction and fantasy stories, astronomy, drawing and writing short stories as my hobbies.
-				</p>
-			</div>
-			<div class="two-grid">
-				&nbsp;
-			</div>
-		</section>
 
 
+  </head>
+  <body>
+    <section class="pageContainer gridEightEight">
+      <aside class="pageRightSide gridFourEight">
+        <div class="pageArticle gridEightEight">
+          <header>
+            <hgroup class="tabletVisible">
+              <h1>Aliireeza Teymoorian</h1>
+              <h2>GNU/Linux Programmer, Web Developer and Designer,<br class="mobileInvisible"> Kingsman Secret Agent</h2>
+            </hgroup>
+          </header>
+          <article class="mobileInvisible">
+          My name is <a href="https://about.me/aliireeza">Aliireeza Teymoorian</a>. I'm 30 y.o.
+          from <a href="https://www.google.com/maps/place/Sa'adat+Abad,+Tehran/@35.7837057,51.3713706,16z/data=!4m2!3m1!1s0x3f8e07e8197af337:0xd8d775d8dd594af1">Tehran, Iran</a>.
+          B.Sc. in Electrical Engineering & M.Sc. in Secure Communications.
+          A Freelance Web Designer & Developer, GNU/Linux System Programmer & Administrator.
+          <br>
+          Also I'm really intersted in Robotics, Astronomy, Photography, Sci-Fi Stories & Secret Societies,
+          So frankly I consider myself as an enthusiast Geek ;)
+          </article>
+          <footer class="mobileInvisible">
+            <a href="https://instagram.com/aliireeza_t/"><i class="fa fa-camera fa-2x"></i></a>
+          </footer>
+        </div>
+      </aside>
 
-
-		<footer class="page-footer" id="page-contact">
-			<div class="two-grid">
-				&nbsp;
-			</div>
-			<div class="four-grid print-unvisible">
-				<h1>Contact Me</h1><br>
-
-					<a href="https://www.google.com/maps/place/Sa'adat+Abad,+Tehran/@35.7837057,51.3713706,16z/data=!4m2!3m1!1s0x3f8e07e8197af337:0xd8d775d8dd594af1"><i class="fa fa-map-marker fa-2x"></i><br>Location</a>
-					<a href="mailto:teymoorian@gmail.com"><i class="fa fa-envelope fa-2x"></i><br>E-Mail</a>
-					<a href="./under-construction.html"><i class="fa fa-phone fa-2x"></i><br>Phone</a>
-					<a href="https://github.com/Aliireeza"><i class="fa fa-github fa-2x"></i><br>GitHub</a>
-					<a href="https://aliireeza.tumblr.com"><i class="fa fa-tumblr fa-2x"></i><br>Weblog</a>
-					<a href="https://medium.com/@Aliireeza"><i class="fa fa-medium fa-2x"></i><br>Medium</a>
-					<a href="https://www.linkedin.com/profile/view?id=193876254"><i class="fa fa-linkedin fa-2x"></i><br>Linkedin</a>
-					<a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-2x"></i><br>Twitter</a>
-					<a href="https://instagram.com/aliireeza_t/"><i class="fa fa-instagram fa-2x"></i><br>Instagram</a>
-					<a href="https://soundcloud.com/alireza-teymoorian"><i class="fa fa-soundcloud fa-2x"></i><br>Soundcloud</a>
-					<a href="https://plus.google.com/u/0/+AlirezaTeymoorian"><i class="fa fa-google-plus fa-2x"></i><br>Google+</a>
-					<a href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook fa-2x"></i><br>Facebook</a>
-					<a href="https://www.youtube.com/channel/UCFscU860kCBW7g1lGeUNH1Q"><i class="fa fa-youtube fa-2x"></i><br>Youtube</a>
-					<a href="http://www.last.fm/user/Aliireeza"><i class="fa fa-lastfm fa-2x"></i><br>Last.fm</a>
-					<a href="https://about.me/aliireeza"><i class="fa fa-quote-left fa-2x"></i><br>about.me</a></a>
-
-				
-				<span>
-					<center>&copy; 1985 - Present</center><br><br>
-				</span>
-			</div>
-			<div class="four-grid print-visible">
-				<h1>Contact Me</h1><br>
-					<a href="teymoorian@gmail.com"><i class="fa fa-envelope fa-1x"></i>&nbsp;&nbsp;E-Mail</a><br>
-					<a href="./under-construction.html"><i class="fa fa-phone fa-1x"></i>&nbsp;&nbsp;Phone</a><br>
-					<a href="https://github.com/Aliireeza"><i class="fa fa-github fa-1x"></i>&nbsp;&nbsp;GitHub</a><br>
-					<a href="https://aliireeza.tumblr.com"><i class="fa fa-tumblr fa-1x"></i>&nbsp;&nbsp;Weblog</a><br>
-					<a href="https://medium.com/@Aliireeza"><i class="fa fa-medium fa-1x"></i>&nbsp;&nbsp;Medium</a><br>
-					<a href="https://www.linkedin.com/profile/view?id=193876254"><i class="fa fa-linkedin fa-1x"></i>&nbsp;&nbsp;Linkedin</a><br><br>
-					<a href="https://twitter.com/Aliireeza"><i class="fa fa-twitter fa-1x"></i>&nbsp;&nbsp;Twitter</a><br>
-					<a href="https://instagram.com/aliireeza_t/"><i class="fa fa-instagram fa-1x"></i>&nbsp;&nbsp;Instagram</a><br>
-					<a href="https://soundcloud.com/alireza-teymoorian"><i class="fa fa-soundcloud fa-1x"></i>&nbsp;&nbsp;Soundcloud</a><br>
-					<a href="https://plus.google.com/u/0/+AlirezaTeymoorian"><i class="fa fa-google-plus fa-1x"></i>&nbsp;&nbsp;Google+</a><br>
-					<a href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook fa-1x"></i>&nbsp;&nbsp;Facebook</a><br>
-					<a href="https://www.youtube.com/channel/UCFscU860kCBW7g1lGeUNH1Q"><i class="fa fa-youtube fa-1x"></i>&nbsp;&nbsp;Youtube</a><br><br>
-					<a href="http://www.last.fm/user/Aliireeza"><i class="fa fa-lastfm fa-1x"></i>&nbsp;&nbsp;Last.fm</a><br>
-					<a href="https://about.me/aliireeza"><i class="fa fa-quote-left fa-1x"></i>&nbsp;&nbsp;About.me</a><br>
-
-				<span>
-					<div class="QRCodeBox"></div>
-				</span>
-			</div>
-			<div vlass="two-grid">
-				&nbsp;
-			</div>
-		</footer>
-	</body>
+      <section class="pageLeftSide gridFourEight">
+        <header class="pageHeader gridEightEight tabletInvisible">
+          <hgroup>
+            <h1>Aliireeza Teymoorian</h1>
+            <h2>GNU/Linux Programmer, Web Developer and Designer,<br>Kingsman Secret Agent</h2>
+          </hgroup>
+        </header>
+        <article class="pageContent gridEightEight">
+          <a href="http://aliireeza.tumblr.com/tagged/Web-Designing">Web Designing Portfolio</a><br>
+          <a href="http://aliireeza.tumblr.com/tagged/Portfolio">Web Development Portfolio</a><br>
+          <a href="https://aliireeza.github.io/under-construction.html">Linux Module/Driver Programming</a><br>
+          <a href="http://aliireeza.tumblr.com/tagged/Projects">Personal Side Projects</a><br>
+          <a href="http://aliireeza.tumblr.com/tagged/Publishing">Publishing and Articles</a><br>
+        </article>
+        <footer class="pageFooter gridEightEight">
+          <a class="twitterLink" href="https://twitter.com/Aliireeza"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a class="facebookLink" href="https://www.facebook.com/Alireza.Teymoorian"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a class="tumblrLink" href="https://aliireeza.tumblr.com/"><i class="fa fa-tumblr-square fa-2x"></i></a>
+          <a class="githubLink" href="https://github.com/Aliireeza"><i class="fa fa-github-square fa-2x"></i></a>
+          <a class="linkedinLink" href="https://www.linkedin.com/profile/view?id=193876254"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a class="mailLink" href="mailto:teymoorian@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+          <br>
+          <i class="fa fa-copyright fa-1x"></i> 1985 - Present
+        </footer>
+      </section>
+    </section>
+  </body>
 </html>
