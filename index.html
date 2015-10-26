@@ -23,7 +23,7 @@
 
 		<!--Online Fonts From Various Sources-->
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 
 		<!--
 			Project Name: My Personal GitHub Page, aliireeza.github.io
@@ -33,7 +33,30 @@
 			Created By Using: HTML5, CSS3, JavaScript, JQuery, Font Awesome, Google Fonts, on OS X 10.11.1 EL Capitan with Atom Code Editor
 		-->
 
-
+		<script type="text/javascript">
+			$(document).ready(function () {
+				if($(window).width()>1000){
+    					$(".pageRightSide .pageArticle header").hide(0).delay(3000).fadeIn(1000)
+    					$(".pageRightSide .pageArticle article").hide(0).delay(3000).fadeIn(3000)
+    					$(".pageRightSide .pageArticle footer").hide(0).delay(3000).fadeIn(2000)
+					$(".pageLeftSide .pageHeader").hide(0).delay(500).fadeIn(1000)
+    					$(".pageLeftSide .pageContent").hide(0).delay(1000).fadeIn(3000)
+    					$(".pageLeftSide .pageFooter").hide(0).delay(1500).fadeIn(5000)
+				}
+				else if($(window).width()<=1000 && $(window).width()>640){
+    					$(".pageRightSide .pageArticle header").hide(0).delay(500).fadeIn(1000)
+    					$(".pageRightSide .pageArticle article").hide(0).delay(1000).fadeIn(3000)
+    					$(".pageRightSide .pageArticle footer").hide(0).delay(1000).fadeIn(2000)
+    					$(".pageLeftSide .pageContent").hide(0).delay(3000).fadeIn(3000)
+    					$(".pageLeftSide .pageFooter").hide(0).delay(4500).fadeIn(5000)
+				}
+				else{
+    					$(".pageRightSide .pageArticle header").hide(0).delay(500).fadeIn(1000)
+    					$(".pageLeftSide .pageContent").hide(0).delay(1000).fadeIn(3000)
+    					$(".pageLeftSide .pageFooter").hide(0).delay(1500).fadeIn(5000)
+				}
+			});
+		</script>
   </head>
   <body>
     <section class="pageContainer gridEightEight">
